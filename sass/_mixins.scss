@@ -1,0 +1,34 @@
+
+@mixin roboto($weight, $size, $color) {
+    font-family: $roboto;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin transition($element, $time, $effect) {
+    -webkit-transition: $element, $time, $effect;
+    -moz-transition: $element, $time, $effect;
+    -o-transition: $element, $time, $effect;
+    -ms-transition: $element, $time, $effect;
+    transition: $element, $time, $effect;
+}
+
+@mixin makeButton($padding, $background, $border-width, $radius) {
+    @include roboto(500, 18px, #fff);
+    @include transition(all, .4s, ease-in-out);
+    padding: $padding;
+    background: $background;
+    border: $border-width solid lighten($background, 20px);
+    border-radius: 4px;
+    text-transform: uppercase;
+    
+    &:active {
+        background: darken($background, 10px);
+        padding: 15px 20px;
+    }
+    
+    &:hover {
+        background: lighten($background, 10px);
+    }
+}

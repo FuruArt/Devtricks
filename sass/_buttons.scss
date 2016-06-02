@@ -1,0 +1,26 @@
+
+button {
+    width: auto;
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: none;
+}
+
+.default {
+    @include makeButton(15px, $default, 1px, 4px);
+}
+
+.warning {
+    @include makeButton(15px, $warn, 1px, 4px);
+}
+
+.error {
+    @include makeButton(15px, $error, 1px, 4px);
+}
+
+.success {
+    @include makeButton(15px, $success, 1px, 4px);
+}
