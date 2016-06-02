@@ -1,3 +1,5 @@
+!(https://blogwpelni.files.wordpress.com/2016/06/devtrick.png)
+
 # Devtricks
 Szybkie porady dla webdeveloperów, które usprawnią ich pracę gotowymi rozwiązaniami utworzonymi przeze mnie.
 
