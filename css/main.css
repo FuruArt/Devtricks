@@ -78,6 +78,76 @@ nav {
   .buttons button {
     display: block; }
 
+.block {
+  display: block;
+  width: 300px;
+  height: 250px;
+  background: #212121;
+  position: relative; }
+  .block img {
+    width: 100%;
+    height: auto; }
+  .block button.full {
+    position: absolute;
+    top: -20px;
+    bottom: auto;
+    left: auto;
+    right: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all, 0.4s, ease-in-out;
+    -moz-transition: all, 0.4s, ease-in-out;
+    -o-transition: all, 0.4s, ease-in-out;
+    -ms-transition: all, 0.4s, ease-in-out;
+    transition: all, 0.4s, ease-in-out;
+    padding: 0;
+    background: red;
+    border: 0 solid #ff6666;
+    border-radius: 100%;
+    text-transform: uppercase;
+    width: 40px;
+    height: 40px; }
+    .block button.full:active {
+      background: #cc0000;
+      padding: 15px 20px; }
+    .block button.full:hover {
+      background: #ff3333; }
+    .block button.full i {
+      color: white;
+      font-size: 18px;
+      vertical-align: middle;
+      text-align: center; }
+  .block button.share {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: yellow;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px; }
+    .block button.share i {
+      color: black;
+      font-size: 18px;
+      vertical-align: middle;
+      text-align: center; }
+  .block button.comment {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    background: lime;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px; }
+    .block button.comment i {
+      color: blue;
+      font-size: 28px;
+      vertical-align: middle;
+      text-align: center; }
+
 button {
   width: auto;
   height: auto;
@@ -176,3 +246,7 @@ h1 {
   font-weight: bold;
   font-size: 32px;
   color: #212121; }
+
+/*@include moveMe(-20px, auto, auto, 20px);
+        @include makeButton(0, red, 0, 100%);
+        @include size(40px, 40px); */

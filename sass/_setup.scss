@@ -27,3 +27,64 @@ nav {
         display: block;
     }
 }
+
+.block {
+    display: block;
+    width: 300px;
+    height: 250px;
+    background: rgb(33,33,33);
+    position: relative;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    button.full {
+        @include moveMe(-20px, auto, auto, 20px);
+        @include makeButton(0, red, 0, 100%);
+        @include size(40px, 40px);
+        i {
+            color: white;
+            font-size: 18px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    
+    button.share {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: yellow;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        
+        i {
+            color: black;
+            font-size: 18px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    
+    button.comment {
+        position: absolute;
+        bottom: 60px;
+        right: 20px;
+        background: lime;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        
+        i {
+            color: blue;
+            font-size: 28px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    } 
+}

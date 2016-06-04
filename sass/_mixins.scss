@@ -20,7 +20,7 @@
     padding: $padding;
     background: $background;
     border: $border-width solid lighten($background, 20px);
-    border-radius: 4px;
+    border-radius: $radius;
     text-transform: uppercase;
     
     &:active {
@@ -31,4 +31,17 @@
     &:hover {
         background: lighten($background, 10px);
     }
+}
+
+@mixin moveMe($top, $bottom, $left, $right) {
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
 }

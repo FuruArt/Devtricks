@@ -5,22 +5,37 @@ head
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Szybki Devtrick
     link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
 body
     .container
         header
             h1 Szybki Devtrick!
             
             nav
-                a(href="#") #1 Devtrick
+                a(href="#one") #1 Devtrick
                         
         hr
         
-        h2 Przyciski akcji z różnymi stanami w Sass!
+        h2#one Przyciski akcji z różnymi stanami w Sass!
         
         .buttons
             button.default Default
             button.warning Warning
             button.error Error
             button.success Success
+            
+        hr
+        
+        h2 Pozycjonowanie relatywno-absolutne
+        
+        .block
+            button.full
+                i.ion-plus-round
+            button.share
+                i.ion-android-share-alt
+            button.comment
+                i.ion-android-chat
+            img(src="http://lorempicsum.com/futurama/350/200/6", alt="")
+            
                     
         
