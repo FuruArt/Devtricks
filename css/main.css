@@ -148,6 +148,100 @@ nav {
       vertical-align: middle;
       text-align: center; }
 
+figure {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  overflow: hidden; }
+  figure:hover figcaption {
+    top: 0px;
+    bottom: auto;
+    left: auto;
+    right: auto; }
+  figure:hover img {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); }
+  figure:active figcaption {
+    background: rgba(255, 90, 0, 0.8);
+    font-size: 22px; }
+  figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all, 0.7s, ease-in-out;
+    -moz-transition: all, 0.7s, ease-in-out;
+    -o-transition: all, 0.7s, ease-in-out;
+    -ms-transition: all, 0.7s, ease-in-out;
+    transition: all, 0.7s, ease-in-out; }
+  figure figcaption {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all, 0.9s, ease-in-out;
+    -moz-transition: all, 0.9s, ease-in-out;
+    -o-transition: all, 0.9s, ease-in-out;
+    -ms-transition: all, 0.9s, ease-in-out;
+    transition: all, 0.9s, ease-in-out;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    top: -500px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    line-height: 300px;
+    text-transform: uppercase; }
+
+/*figure {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        figcaption {
+            top: 0px;
+        }
+
+    &:active {
+        figcaption {
+           background: rgba(255, 90, 0, 0.8);
+           font-size: 22px;
+        }
+    }
+        
+        img {
+           transform: scale(1.2,1.2);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        @include transition(all, .7s, ease-in-out);
+    }
+
+    figcaption {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -500px;
+        background: rgba(255, 0, 0, 0.8);
+        color: #fff;
+        text-align: center;
+        line-height: 300px;
+        @include transition(all, .9s, ease-in-out);
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+*/
 button {
   width: auto;
   height: auto;

@@ -88,3 +88,51 @@ nav {
         }
     } 
 }
+
+@include makeCaption(600px, 300px, rgba(255, 0, 0, 0.8), rgba(255, 90, 0, 0.8), -500px, auto, auto, auto, 0px, auto, auto, auto, center, uppercase, 600, 18px, #fff, scale(1.2, 1.2));
+
+/*figure {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        figcaption {
+            top: 0px;
+        }
+
+    &:active {
+        figcaption {
+           background: rgba(255, 90, 0, 0.8);
+           font-size: 22px;
+        }
+    }
+        
+        img {
+           transform: scale(1.2,1.2);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        @include transition(all, .7s, ease-in-out);
+    }
+
+    figcaption {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -500px;
+        background: rgba(255, 0, 0, 0.8);
+        color: #fff;
+        text-align: center;
+        line-height: 300px;
+        @include transition(all, .9s, ease-in-out);
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+*/

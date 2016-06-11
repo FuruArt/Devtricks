@@ -14,6 +14,14 @@
     transition: $element, $time, $effect;
 }
 
+@mixin transform($animate) {
+    -webkit-transform: $animate;
+    -moz-transform: $animate;
+    -o-transform: $animate;
+    -ms-transform: $animate;
+    transform: $animate;
+}
+
 @mixin makeButton($padding, $background, $border-width, $radius) {
     @include roboto(500, 18px, #fff);
     @include transition(all, .4s, ease-in-out);
@@ -44,4 +52,54 @@
 @mixin size($width, $height) {
     width: $width;
     height: $height;
+}
+
+@mixin makeCaption($width, $height, $background-hover, $background-active, $pos-top, $pos-bottom, $pos-left, $pos-right, $base-pos-top, $base-pos-bottom, $base-pos-left, $base-pos-right, $align, $transform, $weight, $size, $color, $animate) {
+    figure {
+        @include size($width, $height);
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            figcaption {
+                top: $base-pos-top;
+                bottom: $base-pos-bottom;
+                left: $base-pos-left;
+                right: $base-pos-right;
+            }
+
+            img {
+                @include transform($animate);
+            }
+
+        }
+
+        &:active {
+            figcaption {
+                background: $background-active;
+                font-size: $size+4px;
+            }
+        }
+
+        img {
+            @include size(100%, 100%);
+            @include transition(all, .7s, ease-in-out);
+        }
+
+        figcaption {
+            @include size(100%, 100%);
+            @include transition(all, .9s, ease-in-out);
+            @include roboto($weight, $size, $color);
+            background: $background-hover;
+            position: absolute;
+            top: $pos-top;
+            bottom: $pos-bottom;
+            left: $pos-left;
+            right: $pos-right;
+            text-align: $align;
+            line-height: $height;
+            text-transform: $transform;
+
+        }
+    }
 }
