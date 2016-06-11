@@ -3,4 +3,4 @@ Szybkie porady dla webdeveloperów, które usprawnią ich pracę gotowymi rozwi�
 
 ---
 
-[#2] **DevTrick** - Pozycjonowanie absolutno-relatywne z wykorzystaniem **@Mixins**
+[#3] **DevTrick** - Automatyczny opis zdjęcia po najechaniu z pomocą **@mixins**
