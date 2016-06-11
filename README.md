@@ -5,3 +5,4 @@ Szybkie porady dla webdeveloperów, które usprawnią ich pracę gotowymi rozwi�
 
 * **Pierwszy Devtrick** - [Tutaj](https://github.com/FuruArt/Devtricks/tree/%231-Devtrick)
 * **Drugi Devtrick** - [Tutaj](https://github.com/FuruArt/Devtricks/tree/%232-Devtrick)
+* **Trzeci Devtrick** - [Tutaj](https://github.com/FuruArt/Devtricks/blob/%233-Devtrick)
